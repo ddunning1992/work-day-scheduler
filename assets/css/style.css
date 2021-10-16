@@ -25,13 +25,18 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 15px;
+.block-text {
+  margin: auto;
+  padding: 1vw;
+  overflow-wrap: break-word;
+}
+
+.col-10 {
+  padding: 10px;
 }
 
 .row {
-  white-space: pre-wrap;
+
   height: 80px;
   border-top: 1px solid white;;
 }
@@ -42,21 +47,6 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,7 +55,19 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn-i {
+  font-size: 3vw;
+  margin-top: .5vw;
+}
+
+.saveBtn-i:hover {
+  color: black;
   transition: all .3s ease-in-out;
 }
+ .time-slot {
+   font-size: 12px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-weight: bold;
+ }

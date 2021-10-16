@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -30,72 +34,81 @@
     </header>
     <div class="container w-100 border-bottom mb-5">
       <!-- Timeblocks go here -->
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">9:00 AM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="9"></div>
+        <div id="saveBtn9" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">10:00 AM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="10"></div>
+        <div id="saveBtn10" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">11:00 AM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="11"></div>
+        <div id="saveBtn11" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">12:00 PM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="12"></div>
+        <div id="saveBtn12" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">1:00 PM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="13"></div>
+        <div id="saveBtn13" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">2:00 PM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="14"></div>
+        <div id="saveBtn14" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
 
-      <div class="row w-70 mb-1">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">3:00 PM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="15"></div>
+        <div id="saveBtn15" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
-      
-      <div class="row w-70 mb-1 border-dark-bottom">
-        <div class="col-lg-1 border border-left-0">
-          <p class="time-slot"></p>
+
+      <div class="row flex-nowrap w-70">
+        <div class="col border border-left-0">
+          <p class="time-slot">4:00 PM</p>
         </div>
-        <div class="col-lg-10 bg-success"></div>
-        <div class="col-lg-1 bg-info rounded-right"></div>
+        <div contenteditable="true" class="col-10 planner-box" id="16"></div>
+        <div id="saveBtn16" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
+      </div>
+
+      <div class="row flex-nowrap w-70 border-bottom">
+        <div class="col border border-left-0">
+          <p class="time-slot">5:00 PM</p>
+        </div>
+        <div contenteditable="true" class="col-10 planner-box " id="17"></div>
+        <div id="saveBtn17" class="col saveBtn"><span class="oi oi-circle-check saveBtn-i"></span></div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
